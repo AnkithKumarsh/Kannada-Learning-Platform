@@ -120,7 +120,7 @@ export default function LearnPage() {
     const distance = Math.sqrt(dx * dx + dy * dy);
     const steps = Math.max(Math.floor(distance / SAMPLE_DISTANCE), 1);
     
-    const newPoints = [];
+    const newPoints: Array<{ x: number; y: number }> = [];
     for (let i = 1; i <= steps; i++) {
       newPoints.push({
         x: lastPoint.x + (dx * i) / steps,
