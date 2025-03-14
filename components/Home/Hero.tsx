@@ -82,20 +82,20 @@ export default function Hero({ kannadaLetters }: { kannadaLetters: any[] }) {
               key={`floating-${index}`}
               className="absolute text-4xl md:text-5xl font-bold text-white opacity-20"
               initial={{
-                x: Math.random() * window.innerWidth,
-                y: Math.random() * window.innerHeight,
+                x: typeof window !== 'undefined' ? Math.random() * window.innerWidth : 0,
+                y: typeof window !== 'undefined' ? Math.random() * window.innerHeight : 0,
                 rotate: Math.random() * 360
               }}
               animate={{
                 x: [
-                  Math.random() * window.innerWidth,
-                  Math.random() * window.innerWidth,
-                  Math.random() * window.innerWidth
+                  typeof window !== 'undefined' ? Math.random() * window.innerWidth : 0,
+                  typeof window !== 'undefined' ? Math.random() * window.innerWidth : 0,
+                  typeof window !== 'undefined' ? Math.random() * window.innerWidth : 0
                 ],
                 y: [
-                  Math.random() * window.innerHeight,
-                  Math.random() * window.innerHeight,
-                  Math.random() * window.innerHeight
+                  typeof window !== 'undefined' ? Math.random() * window.innerHeight : 0,
+                  typeof window !== 'undefined' ? Math.random() * window.innerHeight : 0,
+                  typeof window !== 'undefined' ? Math.random() * window.innerHeight : 0
                 ],
                 rotate: [0, 180, 360]
               }}
