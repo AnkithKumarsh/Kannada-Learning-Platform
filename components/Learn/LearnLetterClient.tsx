@@ -18,6 +18,8 @@ const KANNADA_LETTERS = [
   { letter: "ಒ", path: "svaragalu11" },
   { letter: "ಓ", path: "svaragalu12" },
   { letter: "ಔ", path: "svaragalu13" },
+  { letter: "ಅಂ", path: "svaragalu14" },
+  { letter: "ಅಃ", path: "svaragalu15" }
 ];
 
 const STROKE_WIDTH = 10;

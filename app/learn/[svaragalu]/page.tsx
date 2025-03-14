@@ -1,7 +1,7 @@
 import LearnLetterClient from "@/components/Learn/LearnLetterClient";
 
 export function generateStaticParams() {
-  return Array.from({ length: 13 }, (_, i) => ({
+  return Array.from({ length: 15 }, (_, i) => ({
     svaragalu: `svaragalu${i + 1}`,
   }));
 }
