@@ -1,4 +1,4 @@
-import LearnLetterClient from "./LearnLetterClient";
+import LearnLetterClient from "@/components/Learn/LearnLetterClient";
 
 export function generateStaticParams() {
   return Array.from({ length: 13 }, (_, i) => ({
